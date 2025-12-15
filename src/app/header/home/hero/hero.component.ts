@@ -5,5 +5,8 @@ import { Component, inject } from '@angular/core';
   templateUrl: './hero.component.html'
 })
 export class HeroComponent {
-
+  OnSubscribe(){
+    alert('Subscribed Successfully!');
+  }
 }
+

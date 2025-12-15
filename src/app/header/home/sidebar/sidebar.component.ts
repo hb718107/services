@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent {
-
+  OnSubscribe(){
+    alert('Subscribed Successfully!');
+  }
 }
