@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SubscribeService } from '../Services/subscribe.service';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +19,7 @@ export class HeaderComponent {
   }
 
   OnSubscribe(){
-    alert('Subscribed Successfully!');
+    let subscribeService = new SubscribeService();
+    subscribeService.OnSubscribeClicked('eternal');
   }
 }
