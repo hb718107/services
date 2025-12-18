@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SubscribeService } from '../../Services/subscribe.service';
 
 @Component({
+
   selector: 'app-home',
   templateUrl: './home.component.html',
 

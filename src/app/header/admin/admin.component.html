@@ -6,7 +6,7 @@
             <option value="Female">Female</option>
         </select>
         <br>
-        <select name="subscriptionType" [(ngModel)]="subType">
+        <select name="subscriptionType" [(ngModel)]="subscriptionType">
             <option value="Monthly">Monthly</option>
             <option value="Quaterly">Quaterly</option>
             <option value="Yearly">Yearly</option>
@@ -16,7 +16,7 @@
             <option value="Inactive">Inactive</option>
         </select>
         <br>
-        <button class="admin-button">CREAT</button>
+        <button class="admin-button" (click)="createUser()">CREAT</button>
     </div>
     <app-user-list></app-user-list>
     <app-user-detail></app-user-detail>
