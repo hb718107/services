@@ -116,6 +116,12 @@ select{
     margin: 8px 2px;
     width: 563px;
     background-color: #2ECC71;
+    cursor: pointer;
+}
+.admin-button:active{
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
 .admin-user-list{
     padding-top: 50px;
@@ -178,3 +184,4 @@ h2{
 p{
     margin: 5px 0px;
 }
+

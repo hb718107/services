@@ -6,7 +6,7 @@ import { UserService } from '../../../Services/user.service';
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
   // providers: [SubscribeService]
-  providers: [SubscribeService,UserService]
+  providers: [SubscribeService]
 })
 export class UserListComponent {
   constructor(private subscribeService: SubscribeService,private userservice : UserService) {}
