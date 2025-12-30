@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { SubscribeService } from '../../../Services/subscribe.service';
 import { UserService } from '../../../Services/user.service';
 import { USER_TOKEN } from '../../../app.module';
+import { User } from '../../../Models/User';
 
 @Component({
   selector: 'app-user-list',
@@ -14,4 +15,8 @@ export class UserListComponent {
       this.subscribeService.OnSubscribeClicked('User List');
    }
    userlist = this.userservice.getAllUsers();
+
+   ShowUserDetails(user:User){
+    this.userservice.onShowUserDetails(user);
+   }
 }

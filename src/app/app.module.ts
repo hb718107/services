@@ -14,8 +14,6 @@ import { CommonModule } from '@angular/common';
 import { UserService } from './Services/user.service';
 import { SubscribeService } from './Services/subscribe.service';
 import { LoggerService } from './Services/logger.service';
-import { User } from './Models/User';
-
 export const USER_TOKEN = new InjectionToken<UserService>('UserService');
 
 
