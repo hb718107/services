@@ -4,7 +4,6 @@ import { UserService } from '../../../Services/user.service';
 @Component({
   selector: 'app-user-detail',
   templateUrl: './user-detail.component.html',
-  providers: [UserService]
 })
 export class UserDetailComponent {
 

@@ -8,9 +8,10 @@ import { SubscribeService } from '../../../Services/subscribe.service';
 
 })
 export class HeroComponent {
-  constructor(private subscribeService: SubscribeService) {}
+  // constructor(private subscribeService: SubscribeService) {}
+  subService = inject(SubscribeService)
   OnSubscribe(){
-      this.subscribeService.OnSubscribeClicked('Hero');
+      this.subService.OnSubscribeClicked('Hero Component');
   }
 }
 

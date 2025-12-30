@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
-import { SubscribeService } from '../../Services/subscribe.service';
 import { UserService } from '../../Services/user.service';
+import { USER_TOKEN } from '../../app.module';
 
 @Component({
   selector: 'app-admin',
@@ -8,7 +8,7 @@ import { UserService } from '../../Services/user.service';
 
 })
 export class AdminComponent {
-  constructor(private userService: UserService) { 
+  constructor( @Inject(USER_TOKEN) private userService: UserService) { 
 
   }
 
